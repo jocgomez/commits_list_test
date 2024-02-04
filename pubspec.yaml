@@ -16,12 +16,15 @@ dependencies:
   go_router: ^13.1.0
   dartz: ^0.10.1
   dio: ^5.4.0
+  envied: ^0.5.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
   very_good_analysis: ^5.0.0
+  envied_generator: ^0.5.3
+  build_runner: ^2.4.8
 
 flutter:
   uses-material-design: true

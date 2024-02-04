@@ -16,7 +16,10 @@ class CommitsRemoteDatasource extends CommitsDatasource {
   @override
   Future<Either<AppException, List<CommitResponse>>> getCommits() async {
     final response = await networkService.get(
-      ApiServices.commits(AppConfigs.ghUsername, AppConfigs.ghRepository),
+      ApiServices.commits(
+        AppConfigs.ghUsername,
+        AppConfigs.ghRepository,
+      ),
     );
 
     return response.fold(

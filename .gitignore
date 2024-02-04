@@ -9,6 +9,7 @@
 .history
 .svn/
 migrate_working_dir/
+*.env
 
 # IntelliJ related
 *.iml
@@ -31,6 +32,9 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
+
+# exclude the API key from version control
+env.g.dart
 
 # Symbolication related
 app.*.symbols
