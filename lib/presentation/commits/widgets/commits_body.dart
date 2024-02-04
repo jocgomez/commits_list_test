@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:commits_list_test/presentation/commits/provider/provider.dart';
+import 'package:flutter/material.dart';
 
 /// {@template commits_body}
 /// Body of the CommitsPage.
@@ -12,7 +12,6 @@ class CommitsBody extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final count = ref.watch(commitsProvider);
-    return Text(count.toString());
+    return Container();
   }
 }

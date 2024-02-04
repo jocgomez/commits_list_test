@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:commits_list_test/presentation/commits/widgets/commits_body.dart';
+import 'package:flutter/material.dart';
 
 /// {@template commits_page}
 /// A description for CommitsPage

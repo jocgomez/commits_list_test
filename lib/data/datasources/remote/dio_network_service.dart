@@ -22,6 +22,7 @@ class DioNetworkService extends NetworkService with ExceptionHandlerMixin {
   }
   final Dio dio;
 
+  String get bearerToken => AppConfigs.ghBearerToken;
   BaseOptions get dioBaseOptions => BaseOptions(
         baseUrl: baseUrl,
         headers: headers,
@@ -34,6 +35,8 @@ class DioNetworkService extends NetworkService with ExceptionHandlerMixin {
   Map<String, Object> get headers => {
         'accept': 'application/json',
         'content-type': 'application/json',
+        'Authorization': 'Bearer $bearerToken',
+        'X-GitHub-Api-Version': '2022-11-28',
       };
 
   @override

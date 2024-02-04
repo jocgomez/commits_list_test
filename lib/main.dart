@@ -1,6 +1,6 @@
 import 'package:commits_list_test/app/view/app.dart';
-import 'package:flutter/material.dart';
+import 'package:commits_list_test/boostrap.dart';
 
 void main() {
-  runApp(const App());
+  bootstrap(const App());
 }
