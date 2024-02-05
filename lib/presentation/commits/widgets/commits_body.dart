@@ -32,7 +32,7 @@ class _CommitsBodyState extends ConsumerState<CommitsBody> {
     final notifier = ref.read(commitsProvider.notifier);
     final state = ref.watch(commitsProvider);
 
-    if (state.commits.isEmpty) return const EmptyCommits();
+    if (state.commits.isEmpty && !state.isLoading) return const EmptyCommits();
 
     return RefreshIndicator(
       onRefresh: notifier.getCommits,
